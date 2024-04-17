@@ -1,0 +1,41 @@
+
+.page {
+  max-width: 1440px;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  min-width: 320px;
+  background-color: black;
+  color: white;
+}
+
+.page__section {
+  max-width: 880px;
+  width: 100%;
+  position: relative;
+  margin: 0 auto;
+}
+
+.page__content {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+
+@media (min-width: 571px) and (max-width: 1200px) {
+
+  .page {
+    background-color: yellow;
+    color: white;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 570px) {
+  .page {
+    padding: 0;
+    margin: 0;
+    color: white;
+  }
+
+}

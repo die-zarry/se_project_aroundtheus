@@ -1,0 +1,38 @@
+.header__image {
+  margin-top: 45px;
+  border: 1px;
+}
+
+.header__line {
+  border: 1px;
+  opacity: 70%;
+  margin-top: 29px;
+}
+
+
+@media (min-width: 320px) and (max-width: 570px) {
+
+  .header__image {
+    margin-top: 28px;
+    margin-left: 27px;
+    border: 1px;
+  }
+
+  .header__line {
+    margin-top: 29px;
+    padding: 0;
+    width: 320px;
+    opacity: 70%;
+    border: 1px solid rgba(84, 84, 84, 1);
+  }
+
+}
+
+@media (min-width: 571px) and (max-width: 1200px) {
+
+  .header__line {
+    max-width: 570px;
+    border: 1px;
+    opacity: 70%;
+  }
+}
