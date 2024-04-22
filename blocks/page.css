@@ -1,6 +1,4 @@
-
 .page {
-  max-width: 1440px;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
@@ -22,20 +20,25 @@
   min-height: 100vh;
 }
 
-
-@media (min-width: 571px) and (max-width: 1200px) {
-
+@media (min-width: 571px) and (max-width: 1440px) {
   .page {
-    background-color: yellow;
     color: white;
+    margin: 0 auto;
   }
+
 }
 
 @media (min-width: 320px) and (max-width: 570px) {
   .page {
+    margin: 0 auto;
     padding: 0;
-    margin: 0;
     color: white;
   }
 
+   .page__section {
+    width: 100%;
+    position: relative;
+    margin: 0 auto;
+    padding: 0;
+  }
 }
