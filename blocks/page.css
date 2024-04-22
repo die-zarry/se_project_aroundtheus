@@ -25,17 +25,20 @@
     color: white;
     margin: 0 auto;
   }
-
 }
 
 @media (min-width: 320px) and (max-width: 570px) {
+  html,
+  body {
+    height: 100%;
+  }
   .page {
     margin: 0 auto;
     padding: 0;
     color: white;
   }
 
-   .page__section {
+  .page__section {
     width: 100%;
     position: relative;
     margin: 0 auto;

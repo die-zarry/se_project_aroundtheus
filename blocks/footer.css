@@ -1,6 +1,6 @@
 .footer__section {
   box-sizing: border-box;
-  font-family: "Inter, Arial, Helvetica, Sans-serif";
+  font-family: "Inter", Arial, sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 22px;
@@ -20,7 +20,7 @@
   .footer__section {
     padding: 0;
     box-sizing: border-box;
-    font-family: "Inter, Arial, Helvetica, Sans-serif";
+    font-family: "Inter", Arial, sans-serif;
     font-size: 18px;
     font-weight: 400;
     line-height: 22px;
