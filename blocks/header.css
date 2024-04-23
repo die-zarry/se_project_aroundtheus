@@ -1,15 +1,14 @@
 .header__image {
+  margin-top: 45px;
   margin-bottom: 41px;
 }
 
 .header {
-  border-bottom: 1px solid;
   opacity: 70%;
-  margin-top: 28px;
+  border-bottom: 1px solid rgba(84, 84, 84, 1);
 }
 
 @media (min-width: 320px) and (max-width: 570px) {
-
   .header {
     max-width: 320px;
   }

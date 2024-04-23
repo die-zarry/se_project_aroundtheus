@@ -32,6 +32,7 @@
 }
 
 .profile__add-button,
+.card__like-button,
 .profile__edit-button:hover {
   cursor: pointer;
 }
@@ -73,6 +74,7 @@
 }
 
 @media (min-width: 320px) and (max-width: 570px) {
+
   .profile {
     max-width: 282px;
     display: flex;
@@ -132,6 +134,7 @@
   }
 
   .profile__add-button,
+  .card__like-button,
   .profile__edit-button:hover {
     cursor: pointer;
   }
