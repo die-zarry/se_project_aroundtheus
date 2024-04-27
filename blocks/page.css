@@ -20,19 +20,22 @@
   min-height: 100vh;
 }
 
-@media (min-width: 571px) and (max-width: 1440px) {
-
+@media (min-width: 514px) and (max-width: 750px) {
   .page {
     color: white;
     margin: 0 auto;
   }
+
+  .page__section {
+    max-width: 585px;
+    width: 100%;
+    position: relative;
+    margin: 0 auto;
+  }
+
 }
 
-@media (min-width: 320px) and (max-width: 570px) {
-  html,
-  body {
-    height: 100%;
-  }
+@media (min-width: 320px) and (max-width: 514px) {
   .page {
     margin: 0 auto;
     padding: 0;
@@ -40,9 +43,7 @@
   }
 
   .page__section {
-    width: 100%;
+    max-width: 320px;
     position: relative;
-    margin: 0 auto;
-    padding: 0;
   }
 }

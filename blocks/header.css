@@ -4,8 +4,7 @@
 }
 
 .header {
-  opacity: 70%;
-  border-bottom: 1px solid rgba(84, 84, 84, 1);
+  border-bottom: 1px solid rgba(84, 84, 84, .7);
 }
 
 @media (min-width: 320px) and (max-width: 570px) {
@@ -20,9 +19,7 @@
     margin-bottom: 32px;
     width: 126px;
     height: 24px;
-    gap: 0px;
     border: 1px 0px 0px 0px;
-    opacity: 0px;
   }
 }
 

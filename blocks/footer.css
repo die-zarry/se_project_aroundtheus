@@ -8,19 +8,16 @@
   text-align: left;
   margin-top: 67px;
   margin-bottom: 60px;
+  color: rgba(84, 84, 84, 1);
+
 }
 
-@media (min-width: 571px) and (max-width: 1200px) {
-  .page {
-    color: white;
-  }
-}
 
 @media (min-width: 320px) and (max-width: 570px) {
   .footer__section {
+    margin: 0;
     width: 282px;
     padding: 0;
-    box-sizing: border-box;
     font-family: "Inter", Arial, sans-serif;
     letter-spacing: 0;
     text-align: left;
@@ -33,14 +30,8 @@
   }
 
   .footer {
-    margin: 0;
-    padding: 0;
-  }
-  .page__section {
-    max-width: 320px;
-    width: 100%;
-    position: relative;
     margin: 0 auto;
     padding: 0;
   }
+
 }
