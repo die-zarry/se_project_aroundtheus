@@ -15,7 +15,7 @@
   }
 
   .header__image {
-    margin-top: 28px;
+     margin-top: 28px;
     max-width: 282px;
     margin-left: 27px;
     margin-bottom: 32px;
@@ -25,5 +25,4 @@
   }
 }
 
-@media (min-width: 571px) and (max-width: 1440px) {
-}
+
