@@ -10,6 +10,8 @@
 @media (min-width: 320px) and (max-width: 570px) {
   .header {
     max-width: 320px;
+    margin: 0 auto;
+    padding: 0;
   }
 
   .header__image {

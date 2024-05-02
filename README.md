@@ -35,4 +35,4 @@ https://die-zarry.github.io/se_project_aroundtheus/
 
 **the link to the project:**
 
-https://youtu.be/huFeZUy3Ltg
+https://youtu.be/_odqaOhRGGc
