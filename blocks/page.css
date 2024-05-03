@@ -22,27 +22,21 @@
 
 @media (min-width: 769px) and (max-width: 1024px) {
   .page {
-    color: white;
     margin: 0 auto;
   }
 
   .page__section {
     max-width: 585px;
-    width: 100%;
-    position: relative;
-    margin: 0 auto;
   }
 }
 
 @media (min-width: 320px) and (max-width: 768px) {
   .page {
-    margin: 0 auto;
     padding: 0;
     color: white;
   }
 
   .page__section {
     max-width: 500px;
-    position: relative;
   }
 }
