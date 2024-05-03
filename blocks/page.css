@@ -23,17 +23,17 @@
 @media (min-width: 769px) and (max-width: 1024px) {
   .page {
     margin: 0 auto;
+    
   }
 
   .page__section {
-    max-width: 585px;
+    max-width: 700px;
   }
 }
 
 @media (min-width: 320px) and (max-width: 768px) {
   .page {
     padding: 0;
-    color: white;
   }
 
   .page__section {

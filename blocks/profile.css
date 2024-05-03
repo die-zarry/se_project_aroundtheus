@@ -10,6 +10,7 @@
   grid-template-areas:
     "title button"
     "description description";
+  justify-content: center;
 }
 
 .profile__edit-button {
@@ -87,8 +88,8 @@
   }
 
   .profile__info {
+    justify-items: center;
     width: 100%;
-    justify-content: center;
   }
 
   .profile__image {
@@ -109,7 +110,10 @@
     font-size: 22px;
     line-height: 26.63px;
     text-align: center;
-    margin-right: 4px;
+    margin-left: 62px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
   }
 
   .profile__add-button {
@@ -122,7 +126,6 @@
     height: 18px;
     width: 18px;
     grid-area: button;
-    margin-top: 4px;
-    margin-left: 4px;
+    margin: 4px 34px 0 4px;
   }
 }
