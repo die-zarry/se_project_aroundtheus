@@ -9,16 +9,13 @@
   margin-top: 67px;
   margin-bottom: 60px;
   color: rgba(84, 84, 84, 1);
-
 }
-
 
 @media (min-width: 320px) and (max-width: 570px) {
   .footer__section {
     margin: 0;
     width: 282px;
     padding: 0;
-    font-family: "Inter", Arial, sans-serif;
     letter-spacing: 0;
     text-align: left;
     margin-top: 48px;
@@ -33,5 +30,4 @@
     margin: 0 auto;
     padding: 0;
   }
-
 }
