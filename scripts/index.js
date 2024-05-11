@@ -1,26 +1,26 @@
 let initialCards = [
   {
-    title: "Yosemite Valley",
-    link: "https://practicum-content.s3.us-west-1.amazonaws.com/software-engineer/around-project/yosemite.jpg",
+    title: "MiladaVigero",
+    link: "https://unsplash.com/photos/yellow-corn-in-close-up-photography-r7NhxSjz7e4",
   },
   {
-    title: "Lake Louise",
-    link: "https://practicum-content.s3.us-west-1.amazonaws.com/software-engineer/around-project/lake-louise.jpg",
+    title: "GettyImages",
+    link: "https://unsplash.com/photos/creative-layout-of-fresh-fruits-nuts-and-ice-cream-cone-flat-lay-summer-concept-Hjv_HtwB9-Y",
   },
   {
-    title: "Bald Mountains",
-    link: "https://practicum-content.s3.us-west-1.amazonaws.com/software-engineer/around-project/bald-mountains.jpg",
+    title: "KarolinaGrabowska",
+    link: "https://unsplash.com/photos/a-person-cutting-a-plate-with-a-knife-and-fork-1huxR1ls2GI",
   },
   {
-    title: "Latemar",
-    link: "https://practicum-content.s3.us-west-1.amazonaws.com/software-engineer/around-project/latemar.jpg",
+    title: "PatriciaJadach",
+    link: "https://unsplash.com/photos/a-bunch-of-raspberries-sitting-on-top-of-each-other-jZU3x1Rwlqw",
   },
   {
-    title: "Vanoise National Park",
-    link: "https://practicum-content.s3.us-west-1.amazonaws.com/software-engineer/around-project/vanoise.jpg",
+    title: "Josefin",
+    link: "https://unsplash.com/photos/lemon-avocado-ginger-orange-fruit-bananas-and-calamdin-s0fuB1h3yPw",
   },
   {
-    title: "Lago di Braies",
-    link: "https://practicum-content.s3.us-west-1.amazonaws.com/software-engineer/around-project/lago.jpg",
+    title: "Rayia Soserberg",
+    link: "https://unsplash.com/photos/a-cutting-board-topped-with-sliced-oranges-next-to-a-knife-ev_GpmUPOwo",
   },
 ];
