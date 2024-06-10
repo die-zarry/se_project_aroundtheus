@@ -24,3 +24,16 @@ let initialCards = [
     link: "https://unsplash.com/photos/a-cutting-board-topped-with-sliced-oranges-next-to-a-knife-ev_GpmUPOwo",
   },
 ];
+
+//  Elements
+const profileEditModal = document.querySelector("#profile-edit-modal");
+const profileClosedButton = document.querySelector("#profile__closed-button");
+const profileEditButton = document.querySelector("#profile-edit-button");
+
+profileEditButton.addEventListener("click", () => {
+  profileEditModal.classList.add("modal_opened");
+});
+
+profileClosedButton.addEventListener("click", () => {
+  profileEditModal.classList.remove("modal_opened");
+});

@@ -1,13 +1,17 @@
 .modal {
-  display: flex;
   position: fixed;
   background-color: rgba(0, 0, 0, 0.5);
   top: 0;
   bottom: 0;
   right: 0;
   left: 0;
-  z-index: 999;
   padding: 191px 425px 191px 425px;
+  display: none;
+  z-index: 0;
+}
+
+.modal_opened {
+  display: flex;
 }
 
 .modal__container {
@@ -16,7 +20,6 @@
   padding: 36px;
   background-color: #fff;
   position: relative;
-  display: none;
   color: #000;
 }
 
@@ -185,10 +188,8 @@
     width: 282px;
     height: 322px;
     display: flex;
-
     position: fixed;
     padding: 123px 19px;
-
     background-color: rgba(0, 0, 0, 0.5);
     top: 0;
     bottom: 80px;
@@ -196,6 +197,10 @@
     left: 0;
     z-index: 999;
     margin: auto;
+  }
+
+  .modal_opened {
+    display: flex;
   }
 
   .modal__container {
