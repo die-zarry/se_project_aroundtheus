@@ -23,86 +23,22 @@
             alt="Avatar"
           />
           <div class="profile__info">
-            <h1 class="profile__title">Jaques Cousteau</h1>
+            <h1 class="profile__title" id="profile__title" >Jaques Cousteau</h1>
             <button
               type="button"
               class="profile__edit-button"
               id="profile-edit-button"
             ></button>
 
-            <p class="profile__description">Explorer</p>
+            <p class="profile__description" id="profile__description" >
+              Explorer
+            </p>
           </div>
           <button type="button" class="profile__add-button"></button>
         </section>
         <section class="cards page__section">
           <ul class="cards__list">
-            <li class="card">
-              <img
-                src="./images/yosemite.jpg"
-                class="card__image"
-                alt="yosemite-valley"
-              />
-              <div class="card__description">
-                <h2 class="card__name">Yosemite Valley</h2>
-                <button type="button" class="card__like-button"></button>
-              </div>
-            </li>
 
-            <li class="card">
-              <img
-                src="./images/lake-louise.jpg"
-                class="card__image"
-                alt="lake-louise"
-              />
-              <div class="card__description">
-                <h2 class="card__name">Lake Louise</h2>
-                <button type="button" class="card__like-button"></button>
-              </div>
-            </li>
-            <li class="card">
-              <img
-                src="./images/bald-mountains.png"
-                class="card__image"
-                alt="bald-mountains"
-              />
-              <div class="card__description">
-                <h2 class="card__name">Bald Mountains</h2>
-                <button type="button" class="card__like-button"></button>
-              </div>
-            </li>
-            <li class="card">
-              <img
-                src="./images/latemar.jpg"
-                class="card__image"
-                alt="latemar"
-              />
-              <div class="card__description">
-                <h2 class="card__name">Latemar</h2>
-                <button type="button" class="card__like-button"></button>
-              </div>
-            </li>
-            <li class="card">
-              <img
-                src="./images/vanoise.jpg"
-                class="card__image"
-                alt="vanoise-national-park"
-              />
-              <div class="card__description">
-                <h2 class="card__name">Vanoise National Park</h2>
-                <button type="button" class="card__like-button"></button>
-              </div>
-            </li>
-            <li class="card">
-              <img
-                src="./images/lago.png"
-                class="card__image"
-                alt="lago-di-braies"
-              />
-              <div class="card__description">
-                <h2 class="card__name">Lago di Braies</h2>
-                <button type="button" class="card__like-button"></button>
-              </div>
-            </li>
           </ul>
         </section>
       </main>
@@ -119,39 +55,34 @@
               class="modal__form modal__form_input_title"
               type="text"
               name="title"
+              id="profile__title-input"
               placeholder="Jacques Cousteau"
             />
             <input
               class="modal__form modal__form_input_description"
               type="text"
               name="description"
+              id="profile__description-input"
               placeholder="Explorer"
             />
-            <button class="modal__button" type="button">Save</button>
-          </form>
-        </div>
-
-        <div class="modal__container2">
-          <button class="modal__close2"></button>
-          <p class="modal__heading2">Edit Profile</p>
-          <form class="modal__form2">
-            <input
-              class="modal__form2 modal__form2_input_title"
-              type="text"
-              name="title"
-              placeholder="Jacques Cousteau"
-            />
-            <input
-              class="modal__form2 modal__form2_input_description"
-              type="text"
-              name="description"
-              placeholder="Explorer"
-            />
-            <button class="modal__button2" type="button">Save</button>
+            <button class="modal__button" type="submit">Save</button>
           </form>
         </div>
       </div>
     </div>
+    <template id="card__template">
+      <li class="card">
+        <img
+          src=""
+          class="card__image"
+          alt=""
+        />
+        <div class="card__description">
+          <h2 class="card__title"></h2>
+          <button type="button" class="card__like-button"></button>
+        </div>
+      </li>
+    </template>
     <script src="./scripts/index.js"></script>
   </body>
 </html>

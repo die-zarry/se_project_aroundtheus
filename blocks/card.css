@@ -21,7 +21,7 @@
   border-bottom-left-radius: 10px;
 }
 
-.card__name {
+.card__title {
   max-width: 220px;
   text-overflow: ellipsis;
   white-space: nowrap;
