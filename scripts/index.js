@@ -76,11 +76,11 @@ function handleProfileEditSubmit(e) {
 profileEditButton.addEventListener("click", () => {
   profileTitleInput.value = profileTitle.textContent;
   profileDescriptionInput.value = profileDescription.textContent;
-  profileEditModal.classList.add("modal_opened");
+  profileEditModal.classList.add("modal__opened");
 });
 
 profileClosedButton.addEventListener("click", () => {
-  closePopop();
+  closePopop(); 
 });
 
 profileEditform.addEventListener("submit", handleProfileEditSubmit);
