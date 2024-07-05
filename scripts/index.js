@@ -31,18 +31,17 @@ const profileClosedButton = document.querySelector("#profile__closed-button");
 const profileEditButton = document.querySelector("#profile-edit-button");
 const profileTitle = document.querySelector("#profile__title");
 const profileDescription = document.querySelector("#profile__description");
-const profileTitleInput = document.querySelector("#profile__title-input");
-const profileDescriptionInput = document.querySelector(
-  "#profile__description-input"
-);
+const titleInput = document.querySelector("[name='title']");
+const descriptionInput = document.querySelector("[name='description']");
+
 const cardListEl = document.querySelector(".cards__list");
 const profileEditform = profileEditModal.querySelector(".modal__form");
 const cardTemplate =
   document.querySelector("#card__template").content.firstElementChild;
 
 // function
-function closePopop() {
-  profileEditModal.classList.remove("modal__opened");
+function closePopup() {
+  profileEditModal.classList.remove("modal_opened");
 }
 
 function getCardElement(cardData) {
@@ -66,21 +65,21 @@ function getCardElement(cardData) {
 // even handler
 function handleProfileEditSubmit(e) {
   e.preventDefault();
-  profileTitle.textContent = profileTitleInput.value;
-  profileDescription.textContent = profileDescriptionInput.value;
-  closePopop();
+  profileTitle.textContent = titleInput.value;
+  profileDescription.textContent = descriptionInput.value;
+  closePopup();
 }
 
 // event listener
 
 profileEditButton.addEventListener("click", () => {
-  profileTitleInput.value = profileTitle.textContent;
-  profileDescriptionInput.value = profileDescription.textContent;
-  profileEditModal.classList.add("modal__opened");
+  titleInput.value = profileTitle.textContent;
+  descriptionInput.value = profileDescription.textContent;
+  profileEditModal.classList.add("modal_opened");
 });
 
 profileClosedButton.addEventListener("click", () => {
-  closePopop(); 
+  closePopup();
 });
 
 profileEditform.addEventListener("submit", handleProfileEditSubmit);

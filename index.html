@@ -23,23 +23,21 @@
             alt="Avatar"
           />
           <div class="profile__info">
-            <h1 class="profile__title" id="profile__title" >Jaques Cousteau</h1>
+            <h1 class="profile__title" id="profile__title">Jaques Cousteau</h1>
             <button
               type="button"
               class="profile__edit-button"
               id="profile-edit-button"
             ></button>
 
-            <p class="profile__description" id="profile__description" >
+            <p class="profile__description" id="profile__description">
               Explorer
             </p>
           </div>
           <button type="button" class="profile__add-button"></button>
         </section>
         <section class="cards page__section">
-          <ul class="cards__list">
-
-          </ul>
+          <ul class="cards__list"></ul>
         </section>
       </main>
       <footer class="footer page__section">
@@ -52,17 +50,15 @@
           <p class="modal__heading">Edit Profile</p>
           <form class="modal__form">
             <input
-              class="modal__form modal__form_input_title"
+              class="modal__input"
               type="text"
               name="title"
-              id="profile__title-input"
               placeholder="Jacques Cousteau"
             />
             <input
-              class="modal__form modal__form_input_description"
+              class="modal__input"
               type="text"
               name="description"
-              id="profile__description-input"
               placeholder="Explorer"
             />
             <button class="modal__button" type="submit">Save</button>
@@ -72,11 +68,7 @@
     </div>
     <template id="card__template">
       <li class="card">
-        <img
-          src=""
-          class="card__image"
-          alt=""
-        />
+        <img src="" class="card__image" alt="" />
         <div class="card__description">
           <h2 class="card__title"></h2>
           <button type="button" class="card__like-button"></button>

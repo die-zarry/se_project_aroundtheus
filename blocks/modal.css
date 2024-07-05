@@ -2,8 +2,6 @@
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
-  /* min-width: 320px; */
-  /* background-color: black; */
   color: white;
   position: fixed;
   background-color: rgba(0, 0, 0, 0.5);
@@ -11,12 +9,12 @@
   bottom: 0;
   right: 0;
   left: 0;
-  padding: 191px 425px 191px 425px;
+  padding: 191px 425px;
   display: none;
   z-index: 0;
 }
 
-.modal__opened {
+.modal_opened {
   display: flex;
 }
 
@@ -59,7 +57,8 @@
   margin: 0;
 }
 
-.modal__form_input_title {
+.modal__input {
+  display: block;
   width: 358px;
   border: none;
   border-bottom: 1px solid rgba(0, 0, 0, 1);
@@ -75,8 +74,8 @@
   line-height: 16.94px;
   text-align: left;
   margin-top: 39px;
-
 }
+
 
 .modal__button {
   border: none;
@@ -99,22 +98,6 @@
   cursor: pointer;
 }
 
-.modal__form_input_description {
-  border: none;
-  border-bottom: 1px solid rgba(0, 0, 0, 1);
-  width: 358px;
-  margin-top: 43px;
-  margin-bottom: 48px;
-  padding-bottom: 13.34px;
-  padding-top: 27px;
-  background-repeat: no-repeat;
-  background-size: contain;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 16.94px;
-  text-align: left;
-}
-
 @media (min-width: 320px) and (max-width: 768px) {
   .modal {
     width: 282px;
@@ -132,7 +115,7 @@
     display: none;
   }
 
-  .modal__opened {
+  .modal_opened {
     display: flex;
   }
 
@@ -177,7 +160,7 @@
     line-height: 21.78px;
   }
 
-  .modal__form_input_title {
+  .modal__input {
     width: 238px;
     border: none;
     border-bottom: 1px solid rgba(0, 0, 0, 1);
@@ -186,26 +169,10 @@
     font-weight: 400;
     line-height: 16.94px;
     text-align: left;
-    margin: 76px 0 0 0;
     padding-top: 9px;
     padding-bottom: 9px;
     border-radius: 2px;
-  }
 
-  .modal__form_input_description {
-    border: none;
-    border-bottom: 1px solid rgba(0, 0, 0, 1);
-    width: 238px;
-    margin-top: 30px;
-    margin-bottom: 33px;
-    padding-bottom: 9px;
-    padding-top: 9px;
-    border-radius: 2px;
-    font-family: Inter, Arial, sans-serif;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 16.94px;
-    text-align: left;
   }
 
   .modal__button {
