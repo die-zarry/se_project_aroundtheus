@@ -73,9 +73,15 @@
   font-weight: 400;
   line-height: 16.94px;
   text-align: left;
+}
+
+.modal__input:first-of-type {
   margin-top: 39px;
 }
 
+.modal__input:last-of-type {
+  margin-bottom: 29px;
+}
 
 .modal__button {
   border: none;
@@ -98,21 +104,23 @@
   cursor: pointer;
 }
 
-@media (min-width: 320px) and (max-width: 768px) {
+@media (min-width: 282px) and (max-width: 768px) {
   .modal {
-    width: 282px;
+    max-width: 282px;
     height: 322px;
     display: flex;
+    flex-direction: row;
+    align-self: center;
     position: fixed;
     padding: 123px 19px;
     background-color: rgba(0, 0, 0, 0.5);
     top: 0;
-    bottom: 80px;
+    bottom: 0;
     right: 0;
     left: 0;
     z-index: 999;
-    margin: auto;
     display: none;
+    margin: 8px auto;
   }
 
   .modal_opened {
@@ -125,13 +133,14 @@
     border-radius: 10px;
     background-color: #fff;
     position: relative;
-    padding: 0 22px 25px;
+    padding: 0 ;
   }
 
   .modal__form {
     margin: auto 0;
     padding: 0;
     display: block;
+    position: relative;
   }
 
   .modal__close {
@@ -142,7 +151,7 @@
     height: 26px;
     background-repeat: no-repeat;
     background-size: contain;
-    bottom: calc(100% + 15px);
+    bottom: calc(100% + 21px);
     left: calc(100% - 35px);
     background-color: transparent;
     cursor: pointer;
@@ -155,7 +164,7 @@
     font-weight: 900;
     text-align: left;
     padding: 0;
-    margin: 25px 22px 0 0;
+    margin: 25px 22px;
     font-size: 18px;
     line-height: 21.78px;
   }
@@ -163,7 +172,7 @@
   .modal__input {
     width: 238px;
     border: none;
-    border-bottom: 1px solid rgba(0, 0, 0, 1);
+    border-bottom: 1px solid rgba(211, 211, 211, 1);
     font-family: Inter, Arial, sans-serif;
     font-size: 14px;
     font-weight: 400;
@@ -172,7 +181,7 @@
     padding-top: 9px;
     padding-bottom: 9px;
     border-radius: 2px;
-
+    margin: 25px 22px;
   }
 
   .modal__button {
@@ -181,12 +190,15 @@
     height: 50px;
     color: white;
     background: rgba(0, 0, 0, 1);
-    font-family: Inter;
-    font-size: 18px;
+    font-family: Inter, Arial, sans-serif;
+    font-size: 14px;
     font-weight: 400;
     line-height: 21.78px;
     text-align: center;
     border-radius: 2px;
+    margin-top: 39px;
+    position: absolute;
+    margin: 22px 22px;
   }
 
   .modal__button:hover {
