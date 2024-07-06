@@ -110,7 +110,6 @@
     height: 322px;
     display: flex;
     flex-direction: row;
-    align-self: center;
     position: fixed;
     padding: 123px 19px;
     background-color: rgba(0, 0, 0, 0.5);
@@ -120,7 +119,7 @@
     left: 0;
     z-index: 999;
     display: none;
-    margin: 8px auto;
+    margin: 0 auto;
   }
 
   .modal_opened {
@@ -151,7 +150,7 @@
     height: 26px;
     background-repeat: no-repeat;
     background-size: contain;
-    bottom: calc(100% + 21px);
+    bottom: calc(100% + 12px);
     left: calc(100% - 35px);
     background-color: transparent;
     cursor: pointer;
@@ -181,7 +180,7 @@
     padding-top: 9px;
     padding-bottom: 9px;
     border-radius: 2px;
-    margin: 25px 22px;
+    margin: 22px;
   }
 
   .modal__button {
@@ -196,9 +195,8 @@
     line-height: 21.78px;
     text-align: center;
     border-radius: 2px;
-    margin-top: 39px;
+    margin: 39px 22px;
     position: absolute;
-    margin: 22px 22px;
   }
 
   .modal__button:hover {
