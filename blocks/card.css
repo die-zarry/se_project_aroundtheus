@@ -40,6 +40,10 @@
   border: 0px;
   transition: opacity 1s linear 0.5s;
 }
+.card__like-button-active{
+
+ background-image: url(../images/card-like-btn-active.svg);
+}
 
 .card__like-button:hover {
   cursor: pointer;
