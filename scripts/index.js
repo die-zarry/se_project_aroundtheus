@@ -34,6 +34,7 @@ const profileModalClosedButton = profileEditModal.querySelector(
 const addCardModalClosedButton = addCardModal.querySelector(
   "#profile__closed-button"
 );
+// const cardDeleteButton = document.querySelector(".card__delete-button");
 const profileEditButton = document.querySelector("#profile-edit-button");
 const profileTitle = document.querySelector("#profile__title");
 const profileDescription = document.querySelector("#profile__description");
@@ -64,6 +65,8 @@ function getCardElement(cardData) {
   //access the card title and image and store them in variables
   const cardImageEl = cardElement.querySelector(".card__image");
   const cardTitleEl = cardElement.querySelector(".card__title");
+  const cardDeleteButton = cardElement.querySelector(".card__delete-button");
+  const likeButton = cardElement.querySelector(".card__like-button");
   //set the path to the image to the link field of the object
   cardImageEl.src = cardData.link;
   //set the image alt text to the name field of the object
@@ -73,11 +76,13 @@ function getCardElement(cardData) {
   cardTitleEl.textContent = cardData.name;
 
   //return the ready HTML element with the filled-in data
-  const likeButton = cardElement.querySelector(".card__like-button");
+
   likeButton.addEventListener("click", () => {
     likeButton.classList.toggle("card__like-button-active");
   });
-
+  cardDeleteButton.addEventListener("click", () => {
+    cardElement.remove();
+  });
   return cardElement;
 }
 
@@ -87,6 +92,13 @@ function renderCard(cardData, wrapper) {
 }
 
 // even handler
+
+// function handleDeleteCard(e) {
+//   e.preventDefault();
+//   deleteButton.remove();
+// }
+
+function handlePreviewCard() {}
 function handleProfileEditSubmit(e) {
   e.preventDefault();
   profileTitle.textContent = titleInput.value;
@@ -129,6 +141,6 @@ initialCards.forEach((cardData) => renderCard(cardData, cardListEl));
 // const likeButtons = document.querySelectorAll(".card__like-button");
 // likeButtons.forEach(likeButton =>{
 //   likeButton.addEventListener("click", () => {
-//     likeButton.classList.toggle(".card__like-button-active");
+//     likeButton.classList.toggle("card__like-button-active");
 //   })
 // })
