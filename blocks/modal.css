@@ -33,9 +33,12 @@
 }
 
 .modal__card-preview {
-  width: 240px;
-  height: 299px;
+  width: 433px;
+  height: 540px;
+  transition: opacity 5s ease-out;
 }
+
+
 
 .modal__close {
   position: absolute;
