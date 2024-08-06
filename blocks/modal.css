@@ -32,6 +32,11 @@
   display: block;
 }
 
+.modal__card-preview {
+  width: 240px;
+  height: 299px;
+}
+
 .modal__close {
   position: absolute;
   background-image: url("../images/close-icon.svg");
@@ -132,7 +137,7 @@
     border-radius: 10px;
     background-color: #fff;
     position: relative;
-    padding: 0 ;
+    padding: 0;
   }
 
   .modal__form {

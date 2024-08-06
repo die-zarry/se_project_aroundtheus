@@ -87,11 +87,21 @@
           </form>
         </div>
       </div>
+
+      <!-- add card preview modal -->
+      <div class="modal" id="card-preview-modal">
+        <div class="modal__container">
+          <button class="modal__close" id="profile__closed-button"></button>
+          <img src="" class="modal__card-preview" alt="" />
+          <p class="modal__title"></p>
+        </div>
+      </div>
     </div>
     <template id="card__template">
       <li class="card">
         <img src="" class="card__image" alt="" />
         <button class="card__delete-button" type="button"></button>
+        <!-- <button class="modal__close" id="profile__closed-button"></button> -->
         <div class="card__description">
           <h2 class="card__title"></h2>
           <button type="button" class="card__like-button"></button>
