@@ -110,14 +110,14 @@ function renderCard(cardData, wrapper) {
 }
 
 /*                                                                            */
-/*                                even handler                                */
+/*                                Even Handler                                */
 /*                                                                            */
 
 function handleProfileEditSubmit(e) {
   e.preventDefault();
-  profileTitle.textContent = titleInput.value;
-  profileDescription.textContent = descriptionInput.value;
-  closeModal(profileEditButton);
+  profileTitle.textContent = titleInput.value.trim();
+  profileDescription.textContent = descriptionInput.value.trim();
+  closeModal(profileEditModal);
 }
 
 function handleAddCardFormSubmit(e) {
@@ -126,6 +126,7 @@ function handleAddCardFormSubmit(e) {
   const link = cardUrlInput.value;
   renderCard({ name, link }, cardListEl);
   closeModal(addCardModal);
+  addCardFormElement.reset();
 }
 
 function handlePreviewSubmit(e) {

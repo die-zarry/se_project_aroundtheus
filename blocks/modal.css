@@ -38,8 +38,6 @@
   transition: opacity 5s ease-out;
 }
 
-
-
 .modal__close {
   position: absolute;
   background-image: url("../images/close-icon.svg");
