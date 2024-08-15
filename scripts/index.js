@@ -1,4 +1,4 @@
-let initialCards = [
+const initialCards = [
   {
     name: "MiladaVigero",
     link: "https://images.unsplash.com/photo-1578652903016-b78571b87410",
@@ -117,7 +117,6 @@ function handleProfileEditSubmit(e) {
   e.preventDefault();
   profileTitle.textContent = titleInput.value.trim();
   profileDescription.textContent = descriptionInput.value.trim();
-  closeModal(profileEditModal);
 }
 
 function handleAddCardFormSubmit(e) {
@@ -129,11 +128,6 @@ function handleAddCardFormSubmit(e) {
   addCardFormElement.reset();
 }
 
-function handlePreviewSubmit(e) {
-  e.preventDefault();
-  closeModal(modalPreview);
-}
-
 /*                                                                            */
 /*                               event listener                               */
 /*                                                                            */
@@ -142,9 +136,17 @@ function openModal(modal) {
   modal.classList.add("modal_opened");
 }
 
-profileModalClosedButton.addEventListener("click", () =>
-  closeModal(profileEditModal)
-);
+/*                                                                            */
+/*                         Find  and close all buttons                        */
+/*                                                                            */
+const closeButtons = document.querySelectorAll(".modal__close");
+
+closeButtons.forEach((button) => {
+  // Find the closest popup only once
+  const popup = button.closest(".modal");
+  // Set the listener
+  button.addEventListener("click", () => closeModal(popup));
+});
 
 profileEditform.addEventListener("submit", handleProfileEditSubmit);
 addCardFormElement.addEventListener("submit", handleAddCardFormSubmit);
@@ -155,9 +157,6 @@ profileEditButton.addEventListener("click", () => {
 });
 // add new card button
 addNewCardButton.addEventListener("click", () => openModal(addCardModal));
-addCardModalClosedButton.addEventListener("click", () =>
-  closeModal(addCardModal)
-);
 
 initialCards.forEach((cardData) => renderCard(cardData, cardListEl));
 
