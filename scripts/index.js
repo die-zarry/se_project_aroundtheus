@@ -159,5 +159,3 @@ profileEditButton.addEventListener("click", () => {
 addNewCardButton.addEventListener("click", () => openModal(addCardModal));
 
 initialCards.forEach((cardData) => renderCard(cardData, cardListEl));
-
-modalCardPreviewCloseButton.addEventListener("click", handlePreviewSubmit);
