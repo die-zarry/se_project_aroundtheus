@@ -117,6 +117,7 @@ function handleProfileEditSubmit(e) {
   e.preventDefault();
   profileTitle.textContent = titleInput.value.trim();
   profileDescription.textContent = descriptionInput.value.trim();
+  closeModal(profileEditModal);
 }
 
 function handleAddCardFormSubmit(e) {
@@ -140,10 +141,10 @@ function openModal(modal) {
 /*                         Find  and close all buttons                        */
 /*                                                                            */
 const closeButtons = document.querySelectorAll(".modal__close");
-
 closeButtons.forEach((button) => {
   // Find the closest popup only once
   const popup = button.closest(".modal");
+
   // Set the listener
   button.addEventListener("click", () => closeModal(popup));
 });
