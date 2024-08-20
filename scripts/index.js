@@ -36,7 +36,9 @@ const addCardModalClosedButton = addCardModal.querySelector(
 );
 
 const modalPreview = document.querySelector("#card-preview-modal");
-const modalCardPreview = modalPreview.querySelector(".modal__card-preview");
+const modalCardPreviewWindow = modalPreview.querySelector(
+  ".modal__card-preview"
+);
 const modalPreviewTitle = modalPreview.querySelector(".modal__title");
 const profileEditButton = document.querySelector("#profile-edit-button");
 const profileTitle = document.querySelector("#profile__title");
@@ -96,7 +98,7 @@ function getCardElement(cardData) {
   });
 
   cardImageEl.addEventListener("click", () => {
-    modalCardPreview.src = cardData.link;
+    modalCardPreviewWindow.src = cardData.link;
     modalPreviewTitle.textContent = cardData.name;
     openModal(modalPreview);
   });
