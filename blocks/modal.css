@@ -13,7 +13,7 @@
   display: flex;
   visibility: hidden;
   z-index: 0;
-  transition: visibility 0s linear, opacity 0.3s linear;
+  transition: all 1s ease-in;
 }
 
 .modal_opened {
@@ -28,7 +28,7 @@
   padding: 36px;
   background-color: #fff;
   position: relative;
-  color: #000;
+  color: #fff;
 }
 
 .modal__container_preview {
@@ -45,6 +45,8 @@
 }
 
 .modal__card-preview {
+  width: 453px;
+  height: 540px;
   max-width: 75vh;
   max-height: 70vh;
   opacity: 1;
@@ -53,8 +55,8 @@
 }
 
 .modal__close {
-  top: -50px;
-  right: 0px;
+  top: -45px;
+  right: -40px;
   position: absolute;
   background-image: url("../images/close-icon.svg");
   border: none;
@@ -68,10 +70,11 @@
 
 .modal__close-preview {
   position: absolute;
-  right: -50px;
+  right: -40px;
 }
 
 .modal__heading {
+  color: black;
   max-width: 330px;
   font-family: Inter, Arial, sans-serif;
   font-size: 24px;
@@ -131,7 +134,7 @@
 @media (min-width: 282px) and (max-width: 768px) {
   .modal {
     max-width: 282px;
-    height: 322px;
+    max-height: 322px;
     display: flex;
     flex-direction: row;
     position: fixed;
@@ -151,7 +154,7 @@
   }
 
   .modal__container {
-    width: 100%;
+    /* width: 100%; */
     margin: 0 auto;
     border-radius: 10px;
     background-color: #fff;
@@ -170,7 +173,7 @@
     position: absolute;
     background-image: url("../images/close-icon.svg");
     border: none;
-    width: 26px;
+    right: -15px;
     height: 26px;
     background-repeat: no-repeat;
     background-size: contain;
@@ -227,8 +230,10 @@
   }
 
   .modal__card-preview {
+    height: 322px;
+    width: 240px;
     max-width: 43vh;
-    max-height: 70vh;
+    max-height: 75vh;
     opacity: 1;
     bottom: calc(100% + 15px);
     left: calc(100% + 25px);
@@ -237,7 +242,7 @@
 
   .modal__close-preview {
     position: absolute;
-    right: -30px;
+    right: -40px;
     top: -35px;
   }
 }
