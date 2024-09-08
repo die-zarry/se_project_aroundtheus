@@ -152,7 +152,6 @@
 
   .modal__container {
     height: 80%;
-
     margin: 0 auto;
     border-radius: 10px;
     background-color: #fff;
@@ -240,7 +239,7 @@
 
   .modal__close-preview {
     position: absolute;
-    right: -40px;
+    right: -38px;
     top: -35px;
   }
 }
