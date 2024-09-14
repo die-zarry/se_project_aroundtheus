@@ -45,7 +45,7 @@
 }
 
 .modal__card-preview {
-  width: 453px;
+  width: 433px;
   height: 540px;
   max-width: 75vh;
   max-height: 70vh;
@@ -151,8 +151,8 @@
   }
 
   .modal__container {
-    height: 80%;
-    margin: 0 auto;
+    height: 90%;
+    margin: auto;
     border-radius: 10px;
     background-color: #fff;
     position: relative;
