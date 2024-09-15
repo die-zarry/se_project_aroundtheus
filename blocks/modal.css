@@ -151,8 +151,8 @@
   }
 
   .modal__container {
-    height: 90%;
-    margin: auto;
+    height: 82%;
+    margin: 0 auto;
     border-radius: 10px;
     background-color: #fff;
     position: relative;
@@ -227,14 +227,24 @@
   }
 
   .modal__card-preview {
-    height: 100%;
-    width: 100%;
+    height: 299px;
+    width: 240px;
     max-width: 43vh;
     max-height: 75vh;
     opacity: 1;
     bottom: calc(100% + 15px);
     left: calc(100% + 25px);
     transition-delay: 0s;
+  }
+
+  .modal__container_preview {
+    width: 240px;
+    height: 299px;
+    padding: 0;
+    bottom: 0;
+    left: 0;
+    margin: 0 auto;
+    color: white;
   }
 
   .modal__close-preview {
