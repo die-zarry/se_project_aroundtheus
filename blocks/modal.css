@@ -11,6 +11,8 @@
   left: 0;
   padding: 191px 425px;
   display: flex;
+  justify-content: center;
+  align-items: center;
   visibility: hidden;
   opacity: 0;
   z-index: 0;
@@ -37,6 +39,7 @@
   left: 0;
   margin: 0 auto;
   color: white;
+  background-color: transparent;
 }
 
 .modal__form {
@@ -151,7 +154,6 @@
   }
 
   .modal__container {
-    height: 82%;
     margin: 0 auto;
     border-radius: 10px;
     background-color: #fff;
@@ -170,7 +172,8 @@
     position: absolute;
     background-image: url("../images/close-icon.svg");
     border: none;
-    right: -15px;
+    top: -60px;
+    right: 1px;
     height: 26px;
     background-repeat: no-repeat;
     background-size: contain;
@@ -218,7 +221,6 @@
     text-align: center;
     border-radius: 2px;
     margin: 39px 22px;
-    position: absolute;
   }
 
   .modal__button:hover {
@@ -227,19 +229,20 @@
   }
 
   .modal__card-preview {
+    position: absolute;
+    top: -150px;
+    right: -69px;
     height: 299px;
     width: 240px;
     max-width: 43vh;
     max-height: 75vh;
     opacity: 1;
-    bottom: calc(100% + 15px);
-    left: calc(100% + 25px);
     transition-delay: 0s;
   }
 
   .modal__container_preview {
-    width: 240px;
-    height: 299px;
+    max-width: 240px;
+    max-height: 299px;
     padding: 0;
     bottom: 0;
     left: 0;
@@ -249,7 +252,7 @@
 
   .modal__close-preview {
     position: absolute;
-    right: -38px;
-    top: -35px;
+    right: -110px;
+    top: -175px;
   }
 }
